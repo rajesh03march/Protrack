@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="com.myprotrackplus">
+
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+      <listener class-name="com.listeners.CustomListeners"/>
+</listeners>
+
+  <test thread-count="5" name="loginTest">
+    <classes>
+      <class name="com.testcases.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="AddProject">
+		<classes>
+			<class name="com.testcases.AddProject"/>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
